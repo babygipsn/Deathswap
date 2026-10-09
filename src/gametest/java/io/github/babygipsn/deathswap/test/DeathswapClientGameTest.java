@@ -56,8 +56,7 @@ public class DeathswapClientGameTest implements FabricClientGameTest {
 					"ds config set events.enabled false",
 					"ds config set world.spreadRadius 300",
 					"ds config set world.minPlayerDistance 100",
-					"ds config set resourcePack.hostAddress 127.0.0.1",
-					"ds config set resourcePack.mode BUILTIN_HOST")) {
+					"ds config set resourcePack.mode GITHUB")) { // the default players get: pack served from this repo
 				server.runCommand(cmd);
 			}
 
