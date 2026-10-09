@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "description": "Deathswap HUD (fonts for the left-side timer & death list)",
+    "pack_format": 15,
+    "supported_formats": [
+      15,
+      64
+    ],
+    "min_format": 15,
+    "max_format": 9999
+  }
+}

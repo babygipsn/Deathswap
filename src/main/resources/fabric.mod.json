@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "deathswap",
+  "version": "${version}",
+  "name": "Deathswap",
+  "description": "Deathswap minigame: players swap places on a timer. Fresh world every round, left-side HUD (resource pack for vanilla clients, native HUD with the mod), random items, structure placers, random events.",
+  "authors": ["babygipsn"],
+  "contact": {
+    "homepage": "https://github.com/babygipsn/Deathswap",
+    "sources": "https://github.com/babygipsn/Deathswap",
+    "issues": "https://github.com/babygipsn/Deathswap/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/deathswap/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["io.github.babygipsn.deathswap.Deathswap"],
+    "client": ["io.github.babygipsn.deathswap.client.DeathswapClient"]
+  },
+  "mixins": [
+    "deathswap.mixins.json",
+    { "config": "deathswap.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

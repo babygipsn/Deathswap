@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "deathswap-gametest",
+  "version": "1.0.0",
+  "name": "Deathswap automated tests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-client-gametest": ["io.github.babygipsn.deathswap.test.DeathswapClientGameTest"]
+  },
+  "mixins": ["deathswap-gametest.mixins.json"],
+  "depends": { "deathswap": "*" }
+}
